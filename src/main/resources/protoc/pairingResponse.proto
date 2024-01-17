@@ -1,0 +1,14 @@
+syntax = "proto3";
+package com.setainternational.ps.model;
+
+message PairingResponse {
+    string vehicle_id = 1;
+    string user_id = 2;
+    UserResponse user_response = 3;
+    string captcha_response = 4;
+}
+
+enum UserResponse{
+    USER_RESPONSE_ACCEPTED = 0;
+    USER_RESPONSE_DENIED = 1;
+}

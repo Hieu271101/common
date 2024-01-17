@@ -1,0 +1,14 @@
+syntax = "proto3";
+package com.setainternational.ps.model;
+
+message PairingEvent{
+    string event_id = 1;
+    string vehicle_id = 2;
+    string user_id = 3;
+    PairingEventStatus status = 4;
+}
+
+enum PairingEventStatus{
+    PAIRING_EVENT_STATUS_SUCCESS = 0;
+    PAIRING_EVENT_STATUS_FAILED = 1;
+}

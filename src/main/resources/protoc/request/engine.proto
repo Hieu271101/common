@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package com.setainternational.simulator.model;
+
+enum EngineState {
+    ENGINE_STATE_ON = 0;
+    ENGINE_STATE_OFF = 1;
+}
+message Engine {
+    string vehicle_id = 1;
+    string correlation_id = 2;
+    EngineState engine_state = 3;
+}

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.setainternational.simulator.model;
+
+message Boundary {
+    string vehicle_id = 1;
+    double longitude = 2;
+    double latitude = 3;
+    double radius = 4;  // in kilometers
+    string correlation_id = 5;
+}

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package com.setainternational.ps.model;
+
+message VehicleResponse{
+    string vehicle_id = 1;
+    string vehicle_number = 2;
+    string correlation_id = 3;
+    bool paired = 4;
+}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package com.setainternational.simulator.model;
+
+message Door {
+    repeated int32 door_ids = 1;
+    enum Action {
+        LOCK = 0;
+        UNLOCK = 1;
+    }
+    Action action = 2;
+    string vehicle_id = 3;
+    string correlation_id = 4;
+}

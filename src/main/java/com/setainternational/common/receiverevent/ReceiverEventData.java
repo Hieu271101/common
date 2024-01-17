@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 public class ReceiverEventData {
+  //  provided
   @JsonProperty("deviceid")
   private String deviceId;
 

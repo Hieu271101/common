@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package com.setainternational.simulator.model;
+
+message HonkAndFlashResponse {
+    string vehicle_id = 1;
+    bool is_successful = 2;
+    string correlation_id = 3;
+}
